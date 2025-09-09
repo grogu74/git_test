@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+
+  .title-container {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    .buttons-grp {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+
+      .card-button {
+        padding: 0.25rem 0.5rem;
+        border: solid 1px #c2c2c2;
+        background: #c2c2c234;
+        color: #000000;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+      .card-button:hover {
+        background: #c2c2c252;
+        color: #000000;
+      }
+      .delete-button {
+        padding: 0.25rem 0.5rem;
+        border: none;
+        background: #ff362b34;
+        color: #ff362ba9;
+        border-radius: 2rem;
+        cursor: pointer;
+      }
+      .delete-button:hover {
+        background: #ff362b52;
+        color: #ff362ba9;
+      }
+    }
+
+    /* CARD */
+    /* From Uiverse.io by alexruix */
+    .card {
+      width: 190px;
+      height: 254px;
+      border-radius: 20px;
+      background: #f5f5f5;
+      position: relative;
+      padding: 1.8rem;
+      border: 2px solid #c3c6ce;
+      transition: 0.5s ease-out;
+      overflow: visible;
+    }
+
+    .card-details {
+      color: black;
+      height: 100%;
+      gap: 0.5em;
+      display: grid;
+      place-content: center;
+    }
+
+    .text-body {
+      color: rgb(134, 134, 134);
+    }
+
+    /*Text*/
+    .text-title {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+}
